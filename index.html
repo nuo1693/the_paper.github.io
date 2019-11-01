@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>基于Electron开源库校园浏览器的开发</title>
+
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/black.css">
+
+	<!-- Theme used for syn、
+			ax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/monokai.css">
+	<style>
+		.reveal {
+			/* background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1); */
+			background-image: -webkit-gradient(linear, left bottom, right top, from(#6d327c), color-stop(#485DA6), color-stop(#00a1ba), color-stop(#00BF98), to(#36C486));
+			background-image: -webkit-linear-gradient(left bottom, #6d327c, #485DA6, #00a1ba, #00BF98, #36C486);
+			background-image: -o-linear-gradient(left bottom, #6d327c, #485DA6, #00a1ba, #00BF98, #36C486);
+			background-image: linear-gradient(to right top, #6d327c, #485DA6, #00a1ba, #00BF98, #36C486);
+		}
+
+		.reveal section img {
+			background: rgba(255, 255, 255, 0.12);
+			border: 4px solid #eeeeee;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.15)
+		}
+	</style>
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section data-background-transition="zoom">
+				基于Electron开源库校园浏览器的开发
+			</section>
+			<section data-background-transition="zoom">
+				什么是electron？为什么要使用electron？
+				<p class="fragment">像Qt, C++，C#这种开发周期长，迭代速度慢，维护成本大</p>
+				<p class="fragment">对于快速迭代的轻量级产品，推荐使用electron</p>
+			</section>
+			<section>
+				<section>项目设计思路流程图</section>
+				<section>
+					<img src="image/2.jpg">
+				</section>
+			</section>
+			<section>
+				<section>
+					<img src="image/1.jpg">
+				</section>
+				<section>
+					<img src="image/10.jpg">
+				</section>
+				<section>
+					<img src="image/11.jpg">
+				</section>
+				<section>
+					<img src="image/12.jpg">
+				</section>
+				<section>
+					<img src="image/13.jpg">
+				</section>
+				<section>
+					<img src="image/14.jpg">
+				</section>
+				<section>
+					<img src="image/15.jpg">
+				</section>
+				<section>
+					<img src="image/16.jpg">
+				</section>
+				<!-- <p data-background="url(image/1.jpg) no-repeat"></p> -->
+			</section>
+			<section>
+				演示项目
+			</section>
+			<section>谢谢观赏</section>
+		</div>
+	</div>
+
+	<script src="js/reveal.js"></script>
+
+	<script>
+		// More info about config & dependencies:
+		// - https://github.com/hakimel/reveal.js#configuration
+		// - https://github.com/hakimel/reveal.js#dependencies
+		Reveal.initialize({
+			dependencies: [{
+					src: 'plugin/markdown/marked.js'
+				},
+				{
+					src: 'plugin/markdown/markdown.js'
+				},
+				{
+					src: 'plugin/notes/notes.js',
+					async: true
+				},
+				{
+					src: 'plugin/highlight/highlight.js',
+					async: true
+				}
+			],
+			transition: 'convex', //切换过渡效果
+			backgroundTransition: 'convex', // 全屏幻灯片背景的过渡效果
+		});
+	</script>
+</body>
+
+</html>
